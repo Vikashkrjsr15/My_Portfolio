@@ -3,13 +3,10 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-// import Timeline from './components/Timeline';
-// import Blog from './components/Blog';
-// import Contact from './components/Contact';
+import Contact from './components/Contact';
 
 function App() {
   useEffect(() => {
-    // Smooth scroll behavior for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -30,7 +27,7 @@ function App() {
       <Hero />
       <Projects />
       <Skills />
-      {/* <Contact /> */}
+      <Contact />
     </main>
   );
 }

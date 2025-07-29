@@ -15,8 +15,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
+    <section id="home">
+  <motion.nav
+          initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       className={`fixed w-full z-50 px-6 py-4 transition-all duration-300 ${
@@ -27,7 +28,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <motion.a
-          href="#"
+          href="#home"
           className="text-2xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -70,6 +71,7 @@ const Navbar = () => {
         </motion.button>
       </div>
     </motion.nav>
+</section>
   );
 };
 
