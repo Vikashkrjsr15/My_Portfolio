@@ -38,7 +38,7 @@ const handleSubmit = (e) => {
       (response) => {
         console.log('SUCCESS!', response.status, response.text);
         alert('✅ Message sent successfully!');
-        setFormData({ name: '', email: '', message: '' }); // Clear form
+        setFormData({ name: '', email: '', message: '' }); 
         setLoading(false);
       },
       (err) => {
@@ -63,22 +63,22 @@ const handleSubmit = (e) => {
     {
       name: 'GitHub',
       icon: <FaGithub aria-label="GitHub" />,
-      url: 'https://github.com/Vikashkrjsr15' // Replace with your actual GitHub
+      url: 'https://github.com/Vikashkrjsr15' 
     },
     {
       name: 'LinkedIn',
       icon: <FaLinkedin aria-label="LinkedIn" />,
-      url: 'https://linkedin.com/in/vikashjsr15' // Replace with your actual LinkedIn
+      url: 'https://linkedin.com/in/vikashjsr15'
     },
     {
       name: 'LeetCode',
       icon: <FaCode aria-label="LeetCode" />,
-      url: 'https://leetcode.com/u/Vikashjsr15/' // Replace with your actual LeetCode
+      url: 'https://leetcode.com/u/Vikashjsr15/'
     },
     {
       name: 'Email',
       icon: <FaEnvelope aria-label="Email" />,
-      url: 'mailto:your.vikashkrjsr15@gmail.com' // Replace with your email
+      url: 'mailto:your.vikashkrjsr15@gmail.com'
     }
   ];
 
@@ -127,7 +127,7 @@ const handleSubmit = (e) => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-purple-500"
-                  placeholder="Vikash Kumar"
+                  placeholder="Your Name"
                 />
               </div>
 
