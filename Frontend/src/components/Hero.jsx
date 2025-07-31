@@ -31,7 +31,7 @@ const Hero = () => {
             <p className="text-xl text-gray-400 mb-8">
               Building Future-Ready Web Experiences
             </p>
-        <motion.a
+       <motion.a
   whileHover={{ scale: 1.05 }}
   whileTap={{ scale: 0.95 }}
   href="https://vikashkrjsr15.github.io/My_Portfolio/resume.pdf"
