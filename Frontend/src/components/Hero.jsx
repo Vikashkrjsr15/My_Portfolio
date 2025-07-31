@@ -31,16 +31,17 @@ const Hero = () => {
             <p className="text-xl text-gray-400 mb-8">
               Building Future-Ready Web Experiences
             </p>
-          <motion.a
+        <motion.a
   whileHover={{ scale: 1.05 }}
   whileTap={{ scale: 0.95 }}
- href="/My_Portfolio/resume.pdf"
+  href={`${import.meta.env.BASE_URL}resume.pdf`}
   target="_blank"
   rel="noopener noreferrer"
   className="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full text-white font-semibold hover:shadow-lg hover:shadow-purple-500/30 transition-shadow"
 >
   Download My Resume
 </motion.a>
+
 
 
           </motion.div>
